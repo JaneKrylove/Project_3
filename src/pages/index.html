@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet" />
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+    <div class="wrapper">
+      <div class="header__wrapper">
+        <!-- любой лого должен быть ссылкой -->
+          <div class="logo">
+            <img src="images/header_logo.png" alt="logo" class="logo__pic">
+            <h5 class="logo__contact">/ hello@tractpay.io</h5>
+            </div>
+            <!-- челвек хочет кликать в пункты(где ссылки?) -->
+              <ul class="nav">
+                <li class="nav__item">Products</li>
+                <li class="nav__item">Solutions</li>
+                <li class="nav__item">Pricing</li>
+              </ul>
+            <div class="header__buttons">
+              <!-- переделать классы кнопок(сделать универсально) -->
+              <button class="header__link">Log In</button>
+              <button class="header__button">Get Started</button>
+            </div>
+          </div>
+        </div>
+        </header>
+
+        <!-- <div class="parent">
+          <span class="parent__item">
+            <a href="" class="parent__link"></a>
+            <a href="" class="parent__link"></a>
+            <a href="" class="parent__link"></a>
+          </span>
+          <span class="parent__item">
+            <a href="" class="parent__link"></a>
+          </span>
+          <span class="parent__item">
+            <a href="" class="parent__link"></a>
+          </span>
+        </div> -->
+
+        <!-- 
+
+          ребенок:
+          - ребенок с точки зрения html вложенности
+          - ребенок с точки зрения БЭМ
+
+         -->
+
+        <section class="card">
+          <div class="wrapper">
+            <div class="card__wrapper">
+              <div class="card__wrapper-info">
+                <div class="card__info">
+                  <img src="images/wallet.png" alt="" class="card__icon">
+                  <!-- тут что то неладное -->
+                  <span class="icon__desc">Pay Credic Card Bills Online</span>
+                </div>
+                <div class="card__desc">
+                  <h1 class="card__title">Pay Unlimited Credit Bills</h1>
+                  <span class="card__title-info">Pay Credit Car Bills Online & get up to 100% cash back on Globenbank.<span>
+                </div>
+                <div class="card__buttons">                      
+                  <button class="btn btn--download card__btn-download">Download app</button>
+                  <button class="btn btn--contact">
+                    Contact us
+                    <!-- <i class="fa-solid fa-arrow-right card_button-arrow"></i> -->
+                  </button>
+                </div>
+                <div class="card__stats">
+                  <div class="card__stats-cashback">
+                    <h2 class="card__stats-title">10%</h2>
+                      <span class="card__stats-info">Beneficial Cashback</span>
+                      <!-- наверное у двух полосок есть что то общее -->
+                      <!-- базовый класс и модификатор -->
+                      <!-- есть второй способ сделать полосочки (after before) -->
+                      <div class="line-cash"></div>
+                  </div>
+                    <div class="card__stats-customers">
+                      <h2 class="card__stats-title">100k</h2>
+                      <span class="card__stats-info">Satisfied Customers</span>
+                      <div class="line-custom"></div>
+                    </div>              
+                  </div>
+                </div>                
+                <div class="card__pic">
+                  <div class="phone">
+                    <span class="card__pic-title">
+                     Pay Credit Card Bills
+                    </span>
+                  </div>
+                 <!-- <div class="phone__pic">
+                  </div>
+                  <div class="card__user">
+                    <div class="card__user card__user--black"></div>
+                  </div> -->
+
+                    <!-- <img src="images/card.png" alt="card" class="card__user"> -->
+
+                    <!-- <img src="/src/images/kisspng-logo-american-express-cards-bank-insurance-apk-yang-terkait-serve-app-2017-5b65493e38b3e1.8293533915333645422323.png" alt="amex" class="card__user-logo"> -->
+                  
+                  </div>               
+            </div>
+          </div>
+        </section>         
+
+          <footer class="footer">
+            <div class="footer__wrapper">
+              <h3 class="footer__title">featured on</h3>
+              <div class="footer__info">
+                <img src="images/walmart.png" alt="walmart" class="footer__item">
+                <img src="images/swiggi.png" alt="swiggi" class="footer__item">
+                <img src="images/netlify.png" alt="netlify" class="footer__item">
+                <img src="images/BBVA.png" alt="bbva" class="footer__item">
+                <img src="images/atlassian.png" alt="atlassian" class="footer__item">              
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>      
+    </div>
+
+    <!-- @@include('src/components/header/header.html') -->
+    <script src="js/script.js"></script>
+  </body>
+</html>
