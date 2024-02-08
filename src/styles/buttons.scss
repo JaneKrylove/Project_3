@@ -1,0 +1,54 @@
+.btn {
+  border-radius: 10px;
+  padding: 15px 25px;
+  transition: 0.2s;
+
+  &--login {
+    background-color: #f4f4f4;
+    border-radius: 10px;
+    padding: 12px 20px;
+    margin-right: 10px;
+    
+
+    &:hover {
+      background: #565656;
+      color: #fff;
+    }
+  }
+	
+  &--get {
+    padding: 11px 17px;
+    border: #000 solid 2px;
+    border-radius: 10px;
+    transition: transform 0.2s;
+    
+    &:hover {
+      background: #000;
+      color: #fff;
+  }
+}
+
+&--download {
+  background-color: #000;
+  color: #fff;
+  margin-right: 18px;
+  
+  &:hover {
+    // background: linear-gradient(35deg, #fefafb, #eb9ab6, #d73f73);
+    background: linear-gradient(35deg, rgba(243, 59, 124, 0.7), rgba(180, 97, 235, 0.9), rgba(62, 50, 228, 0.7));
+  }
+}
+
+&--contact {
+  border: #000 solid 2px;
+  background: #fff;
+
+	i {
+		margin-left: 15px;
+	}
+  
+  &:hover {
+    background: linear-gradient(35deg, #f8fdff, #27c1ff, #5559ff);
+  }
+}
+}

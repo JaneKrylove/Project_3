@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -8,128 +8,136 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:opsz,wght@6..12,400;6..12,700&display=swap" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@700&display=swap" rel="stylesheet" />
     <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" /> -->
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
     <header class="header">
-    <div class="wrapper">
-      <div class="header__wrapper">
-        <!-- любой лого должен быть ссылкой -->
-          <div class="logo">
-            <img src="images/header_logo.png" alt="logo" class="logo__pic">
-            <h5 class="logo__contact">/ hello@tractpay.io</h5>
-            </div>
-            <!-- челвек хочет кликать в пункты(где ссылки?) -->
-              <ul class="nav">
-                <li class="nav__item">Products</li>
-                <li class="nav__item">Solutions</li>
-                <li class="nav__item">Pricing</li>
-              </ul>
-            <div class="header__buttons">
-              <!-- переделать классы кнопок(сделать универсально) -->
-              <button class="header__link">Log In</button>
-              <button class="header__button">Get Started</button>
-            </div>
+        <div class="container">
+        <div class="header__container">
+          <div class="header__logo">            
+            <a class="logo" href="/">
+              <div class="logo-pic"></div>
+              <!-- <i class="fa-solid fa-circle-half"></i> -->
+
+              <!-- <img class="logo__pic" src="images/header_logo.png" alt="logo" /> -->
+            </a>
+            <span class="logo__contact">/ hello@tractpay.io</span>
+          </div>          
+          <ul class="nav">
+            <li class="nav__item"><a href="#" class="nav__link">Products</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Solutions</a></li>
+            <li class="nav__item"><a href="#" class="nav__link">Pricing</a></li>
+          </ul>
+          <div class="header__buttons">
+            <!-- переделать классы кнопок(сделать универсально) -->
+            <button class="btn btn--login">Log In</button>
+            <button class="btn btn--get">Get Started</button>
           </div>
         </div>
-        </header>
+      </div>   
+    </header>
 
-        <!-- <div class="parent">
-          <span class="parent__item">
-            <a href="" class="parent__link"></a>
-            <a href="" class="parent__link"></a>
-            <a href="" class="parent__link"></a>
-          </span>
-          <span class="parent__item">
-            <a href="" class="parent__link"></a>
-          </span>
-          <span class="parent__item">
-            <a href="" class="parent__link"></a>
-          </span>
-        </div> -->
-
-        <!-- 
-
-          ребенок:
-          - ребенок с точки зрения html вложенности
-          - ребенок с точки зрения БЭМ
-
-         -->
-
-        <section class="card">
-          <div class="wrapper">
-            <div class="card__wrapper">
-              <div class="card__wrapper-info">
-                <div class="card__info">
-                  <img src="images/wallet.png" alt="" class="card__icon">
-                  <!-- тут что то неладное -->
-                  <span class="icon__desc">Pay Credic Card Bills Online</span>
-                </div>
-                <div class="card__desc">
-                  <h1 class="card__title">Pay Unlimited Credit Bills</h1>
-                  <span class="card__title-info">Pay Credit Car Bills Online & get up to 100% cash back on Globenbank.<span>
-                </div>
-                <div class="card__buttons">                      
-                  <button class="btn btn--download card__btn-download">Download app</button>
-                  <button class="btn btn--contact">
-                    Contact us
-                    <!-- <i class="fa-solid fa-arrow-right card_button-arrow"></i> -->
-                  </button>
-                </div>
-                <div class="card__stats">
-                  <div class="card__stats-cashback">
-                    <h2 class="card__stats-title">10%</h2>
-                      <span class="card__stats-info">Beneficial Cashback</span>
-                      <!-- наверное у двух полосок есть что то общее -->
-                      <!-- базовый класс и модификатор -->
-                      <!-- есть второй способ сделать полосочки (after before) -->
-                      <div class="line-cash"></div>
-                  </div>
-                    <div class="card__stats-customers">
-                      <h2 class="card__stats-title">100k</h2>
-                      <span class="card__stats-info">Satisfied Customers</span>
-                      <div class="line-custom"></div>
-                    </div>              
-                  </div>
-                </div>                
-                <div class="card__pic">
-                  <div class="phone">
-                    <span class="card__pic-title">
-                     Pay Credit Card Bills
-                    </span>
-                  </div>
-                 <!-- <div class="phone__pic">
-                  </div>
-                  <div class="card__user">
-                    <div class="card__user card__user--black"></div>
-                  </div> -->
-
-                    <!-- <img src="images/card.png" alt="card" class="card__user"> -->
-
-                    <!-- <img src="/src/images/kisspng-logo-american-express-cards-bank-insurance-apk-yang-terkait-serve-app-2017-5b65493e38b3e1.8293533915333645422323.png" alt="amex" class="card__user-logo"> -->
-                  
-                  </div>               
+    <section class="card">
+      <div class="container">
+        <div class="card__container">
+          <div class="card__description">
+            <div class="title">
+              <img src="images/wallet.png" alt="" class="title__icon" />
+              <!-- тут что то неладное -->
+              <span class="title__desc">Pay Credit Card Bills Online</span>
             </div>
-          </div>
-        </section>         
-
-          <footer class="footer">
-            <div class="footer__wrapper">
-              <h3 class="footer__title">featured on</h3>
-              <div class="footer__info">
-                <img src="images/walmart.png" alt="walmart" class="footer__item">
-                <img src="images/swiggi.png" alt="swiggi" class="footer__item">
-                <img src="images/netlify.png" alt="netlify" class="footer__item">
-                <img src="images/BBVA.png" alt="bbva" class="footer__item">
-                <img src="images/atlassian.png" alt="atlassian" class="footer__item">              
+            <div class="info">
+              <h1 class="info__title">Pay Unlimited Credit Bills</h1>
+              <span class="info__text">Pay Credit Car Bills Online & get up to 100% cash back on Globenbank.</span>
+            </div>
+            <div class="card__buttons">
+              <button class="btn btn--download">Download app</button>
+              <button class="btn btn--contact">
+                Contact us
+                <i class="fa-solid fa-arrow-right"></i>
+              </button>
+            </div>
+            <div class="stats">
+              <div class="stats__item">
+                <h2 class="stats__title">10%</h2>
+                <span class="stats__info stats__info--blue">Beneficial Cashback</span>
+                <!-- наверное у двух полосок есть что то общее -->
+                <!-- базовый класс и модификатор -->
+                <!-- есть второй способ сделать полосочки (after before) -->
+                <!-- <div class="line-cash"></div> -->
+              </div>
+              <div class="stats__item">
+                <h2 class="stats__title">100k</h2>
+                <span class="stats__info stats__info--pink">Satisfied Customers</span>
+                <!-- <div class="line-custom"></div> -->
               </div>
             </div>
-          </footer>
+          </div>
+          <div class="card__pictures">
+            <div class="message-up">
+              <img src="images/visa_logo.png" alt="" class="message-up__logo" />
+              <span class="message-up__info"> Jennifer Paid <span class="message-up__sum">$ 14,800 USD</span> for Design</span>
+              <i class="fa-regular fa-circle-check"></i>
+              <img src="images/arrow.png" alt="arrow" class="right-arrow" />
+            </div>
+
+            <!-- элемент под ним ?? -->
+
+            <div class="phone">
+              <span class="phone__title">
+                <i class="fa-solid fa-arrow-left phone__arrow"></i>
+                Pay Credit Card Bills
+              </span>
+              <div class="message-down">
+                <img class="message-down__logo" src="images/circle-dollar.svg" alt="msg" />
+                <span class="message-down__sum">199.00</span>
+                <img class="right-arrow" src="images/arrow.png" alt="arrow" />
+              </div>
+            </div>
+            <!-- animate__animated animate__backInUp -->
+            <div class="card-user card__card-user">
+              <div class="card-user__top">
+                <div class="card-user__logo-wrapper">
+                  <img class="card-user__logo" src="images/amex.png" alt="amex" />
+                </div>
+                <form class="card-user__form" action="#">
+                  <input class="card-user__field" type="number" placeholder="0000 0000 0000 0000" />
+                </form>
+              </div>
+              <div class="card-user__bottom">
+                <div class="card-items">
+                  <span class="card-items__title">Marvin McKinney</span>
+                  <span class="card-items__info">Exp 09/24</span>
+                </div>
+                <div class="circles">
+                  <div class="circle circle--black circles__circle-black"></div>
+                    <div class="circle circle--white"></div>
+                 </div>                  
+                </div>
+              </div>
+            </div>
+          </div>
         </div>
-      </div>      
-    </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="footer__container">
+        <h3 class="footer__title">featured on</h3>
+        <div class="footer__info">
+          <img src="images/walmart.png" alt="walmart" class="footer__item" />
+          <img src="images/swiggi.png" alt="swiggi" class="footer__item" />
+          <img src="images/netlify.png" alt="netlify" class="footer__item" />
+          <img src="images/BBVA.png" alt="bbva" class="footer__item" />
+          <img src="images/atlassian.png" alt="atlassian" class="footer__item" />
+        </div>
+      </div>
+    </footer>
 
     
     <script src="js/script.js"></script>
