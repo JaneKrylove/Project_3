@@ -4062,7 +4062,6 @@ legend {
 .btn--download {
   background-color: #000;
   color: #fff;
-  margin-right: 18px;
 }
 .btn--download:hover {
   background: linear-gradient(35deg, rgba(243, 59, 124, 0.7), rgba(180, 97, 235, 0.9), rgba(62, 50, 228, 0.7));
@@ -4091,7 +4090,8 @@ body {
 }
 
 .container {
-  width: 1200px;
+  min-width: 375px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 25px 60px 25px 65px;
   background-color: #fff;
@@ -4196,6 +4196,9 @@ body {
   display: -ms-flexbox;
   display: flex;
   margin-bottom: 60px;
+}
+.card__btn-download {
+  margin-right: 18px;
 }
 .card__pictures {
   position: relative;
@@ -4341,7 +4344,7 @@ body {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  width: 358px;
+  max-width: 90%;
   padding: 17px 15px;
   background-color: #fff;
   border-radius: 15px;
@@ -4351,9 +4354,11 @@ body {
   display: block;
   width: 25px;
   height: 24px;
+  margin-right: 10px;
 }
 .message-up__info {
   font-size: 14px;
+  margin-right: 10px;
 }
 .message-up__sum {
   font-weight: 600;
@@ -4362,6 +4367,7 @@ body {
 .right-arrow {
   width: 15px;
   height: 12px;
+  margin-left: 10px;
 }
 
 .message-down {
@@ -4419,7 +4425,7 @@ body {
 }
 
 .card-user {
-  width: 300px;
+  max-width: 300px;
   height: 166px;
   background: #fff;
   border-radius: 10px;
@@ -4559,7 +4565,7 @@ body {
 
 /* footer style */
 .footer__container {
-  width: 1200px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 65px 60px 25px 90px;
   background-color: #fff;
@@ -4584,6 +4590,8 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
   -webkit-box-align: center;
   -ms-flex-align: center;
   align-items: center;
@@ -4591,22 +4599,117 @@ body {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-right: 30px;
-  margin-bottom: 60px;
 }
 .footer__item {
   width: 100px;
 }
 
-/* .price::before {
-  content: "";
-  display: block;
-  position: absolute;
-  background-color: red;
-  height: 1px;
-  width: 40px;
-  top: 10px;
-  left: 92px;
+/* Media */
+@media (max-width: 1024px) {
+  .container {
+    padding: 25px 35px 25px 40px;
+  }
+  .card__buttons {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .card__btn-download {
+    margin-right: 0;
+    margin-bottom: 10px;
+  }
 }
+@media (max-width: 768px) {
+  .container {
+    padding: 25px 10px;
+  }
+  .header__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .header__logo {
+    margin-bottom: 20px;
+  }
+  .header__nav {
+    margin-bottom: 20px;
+  }
+  .card__container {
+    padding-left: 0;
+  }
+  .card__description {
+    padding-right: 15px;
+  }
+}
+@media (max-width: 675px) {
+  .card__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    position: relative;
+  }
+  .card__description {
+    width: 100%;
+    padding-right: 0;
+    margin-bottom: 40px;
+  }
+  .card__pictures {
+    width: 100%;
+    padding-top: 20px;
+  }
+  .card__buttons {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  .message-up {
+    display: none;
+  }
+  .title {
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .info__title {
+    text-align: center;
+  }
+  .info__text {
+    text-align: center;
+  }
+  .stats {
+    margin-top: 20px;
+  }
+  .stats__title {
+    text-align: center;
+  }
+  .stats__info {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+  }
+  .footer__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .footer__item {
+    width: 200px;
+    margin-bottom: 40px;
+  }
+}
+/* 
 
- */
+ДЗ:
+- на ширине меньше 675px избавиться от message-up phone + сделать карточку relative
+- отлепить цветной блок от цифр сверху
+- доадаптировать футер
+
+
+*/
 /*# sourceMappingURL=style.css.map */
